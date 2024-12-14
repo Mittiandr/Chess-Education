@@ -2,7 +2,7 @@ package com.example.chesslearning.model;
 
 import com.example.chesslearning.enums.DebutType;
 
-public class DebutModel {
+public class DebutModel{
     private String image;
     private String nameDebut;
     private String difficulties;
