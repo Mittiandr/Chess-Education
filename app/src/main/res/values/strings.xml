@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ChessLearning</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome! Let`s learn\nChess Nurd</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="authorization">Authorization</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="incorrect_email">Write correct email</string>
+    <string name="incorrect_password">Write correct password</string>
+    <string name="bad_internet">Bad Internet Connection</string>
+    <string name="debuts">Debuts</string>
+    <string name="debut_1">Debut 1</string>
+    <string name="step_1_italian_defence">Step 1: Italian Defence</string>
+    <string name="sicilian_Defence">Sicilian Defence</string>
+    <string name="go_to_practice">Go To Practice</string>
+    <string name="availible">Availible</string>
+    <string name="next_step">Next Step</string>
+    <string name="don_t_have_an_account">Don`t have an account?</string>
+    <string name="back">Back</string>
+
+
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "201784903664",
+    "project_id": "chess-learning-8b8e8",
+    "storage_bucket": "chess-learning-8b8e8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201784903664:android:390e25990687cc09637f35",
+        "android_client_info": {
+          "package_name": "com.example.chesslearning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeWOHL2gQ8jqc8nIwsaiQt23Y-jMuJeLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
