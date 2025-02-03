@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.view.LayoutInflater;
@@ -57,9 +58,14 @@ public class DebutFragment extends Fragment implements StepsAdapter.ClickListene
         super.onViewCreated(view, savedInstanceState);
         getDebutFromBundle(getArguments());
         setupView();
+        applyClick();
 
     }
-
+    public void applyClick(){
+        binding.ivBackButton.setOnClickListener(v->{
+            Navigation.findNavController(v).popBackStack();
+        });
+    }
     private void setupView() {
         binding.tvDebutName.setText(currentDebut.getNameDebut());
         setAdapter();
