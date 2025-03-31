@@ -60,15 +60,15 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:tint="@color/main_color" />
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:theme="@style/MainButton"
-        android:text="More"
-        app:icon="@drawable/baseline_more_vert_24"
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/baseline_help_outline_24"
         app:layout_constraintEnd_toEndOf="@id/cardView"
+        app:tint="@color/main_color"
         android:id="@+id/explanationButton"
-        app:layout_constraintTop_toTopOf="parent" />
+
+        app:layout_constraintTop_toTopOf="@id/tvDebutEXplanationStep" />
 
 
     <com.google.android.material.button.MaterialButton

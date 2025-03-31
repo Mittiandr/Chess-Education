@@ -11,6 +11,8 @@
     <string name="sign_up">Sign Up</string>
     <string name="incorrect_email">Write correct email</string>
     <string name="incorrect_password">Write correct password</string>
+    <string name="passwords_mismatch">Passwords mismatch</string>
+    <string name="something_went_wrong">Something went wrong</string>
     <string name="bad_internet">Bad Internet Connection</string>
     <string name="debuts">Debuts</string>
     <string name="debut_1">Debut 1</string>
@@ -21,6 +23,13 @@
     <string name="next_step">Next Step</string>
     <string name="don_t_have_an_account">Don`t have an account?</string>
     <string name="back">Back</string>
+    <string name="registration">Registration</string>
+    <string name="sign_in">Sign In</string>
+    <string name="have_an_account">Have an account</string>
+    <string name="creating_new_account">Creating new account</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="options">Options</string>
+    <string name="finish">Finish</string>
 
 
 </resources>

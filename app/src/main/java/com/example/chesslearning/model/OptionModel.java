@@ -1,13 +1,14 @@
 package com.example.chesslearning.model;
 
-import com.example.chesslearning.enums.DebutType;
+import java.util.ArrayList;
 
-public class DebutModel{
+public class OptionModel {
     private String image;
-    private String nameDebut;
+    private String name;
     private String difficulties;
     private String explanation;
     private String id;
+    private ArrayList <StepModel> steps;
 
     public String getId() {
         return id;
@@ -17,7 +18,7 @@ public class DebutModel{
         this.id = id;
     }
 
-    private DebutModel(){
+    private OptionModel(){
 
     }
 
@@ -25,8 +26,12 @@ public class DebutModel{
         return image;
     }
 
-    public String getNameDebut() {
-        return nameDebut;
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<StepModel> getSteps() {
+        return steps;
     }
 
     public String getDifficulties() {

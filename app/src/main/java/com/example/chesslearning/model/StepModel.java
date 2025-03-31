@@ -3,9 +3,7 @@ package com.example.chesslearning.model;
 public class StepModel {
     private String image;
     private String explanation;
-    private String name;
-    private String idDebut;
-    private int stepNum;
+    private String shortExplanation;
 
 
     public StepModel(){}
@@ -13,14 +11,15 @@ public class StepModel {
         return image;
     }
 
-    public String getIdDebut() {return idDebut;}
-
-    public int getStepNum() {return stepNum;}
-
     public String getExplanation() {
         return explanation;
     }
-    public String getName() {
-        return name;
+
+    public String getShortExplanation() {
+        return shortExplanation;
+    }
+
+    public void setShortExplanation(String shortExplanation) {
+        this.shortExplanation = shortExplanation;
     }
 }

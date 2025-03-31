@@ -1,6 +1,6 @@
 package com.example.chesslearning.enums;
 
-public enum DebutType {
+public enum OptionDifficulties {
     HARD,
     MEDIUM,
     EASY
