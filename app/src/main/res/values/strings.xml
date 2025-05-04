@@ -30,6 +30,11 @@
     <string name="repeat_password">Repeat Password</string>
     <string name="options">Options</string>
     <string name="finish">Finish</string>
+    <string name="professionals">Professionals</string>
+    <string name="magnus_carlsen">Magnus Carlsen</string>
+    <string name="best_games">Best games</string>
+    <string name="country">"Country: "</string>
+    <string name="pick_rate">"Pick Rate: "</string>
 
 
 </resources>

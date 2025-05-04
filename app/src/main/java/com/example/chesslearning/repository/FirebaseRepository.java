@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.example.chesslearning.model.OptionModel;
+import com.example.chesslearning.model.ProfessionalModel;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -14,15 +15,19 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FirebaseRepository extends ViewModel {
-    private final List<String> collections = Arrays.asList("Debuts","Tactics","Castling","Figures");
+    private final List<String> collections = Arrays.asList("Debuts", "Tactics", "Castling", "Figures");
     private FirebaseFirestore database = FirebaseFirestore.getInstance();
     private ArrayList<OptionModel> options = new ArrayList<>();
     public MutableLiveData<Boolean> isLoaded = new MutableLiveData<Boolean>(false);
+    private ArrayList<ProfessionalModel> professionals = new ArrayList<>();
 
     public ArrayList<OptionModel> getDebuts() {
         return options;
     }
-    public List<String> getCollectionsName(){
+    public ArrayList<ProfessionalModel> getProfies(){
+        return professionals;
+    }
+    public List<String> getCollectionsName() {
         return collections;
     }
 
@@ -44,6 +49,23 @@ public class FirebaseRepository extends ViewModel {
                     });
         });
 
+    }
+
+    public void getProfessionals() {
+        professionals.clear();
+        database.collection("Professionals").get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
+                            ProfessionalModel professional = documentSnapshot.toObject(ProfessionalModel.class);
+                            professional.setId(documentSnapshot.getId());
+                            professionals.add(professional);
+                        }
+                        isLoaded.setValue(true);
+                    } else {
+                        Log.e("ERROR", task.getException().getMessage());
+                    }
+                });
     }
 }
 

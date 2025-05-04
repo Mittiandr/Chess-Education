@@ -1,4 +1,4 @@
-package com.example.chesslearning.castom;
+package com.example.chesslearning.custom;
 
 import android.os.Handler;
 

@@ -15,4 +15,6 @@
     <color name="yellow">#d6d13c</color>
     <color name="red">#D01E1E</color>
     <color name="white_button_stroke">#78AAAAAA</color>
+    <color name="fakeWhite">#DFDFDF</color>
+    <color name="divider_grey">#707070</color>
 </resources>

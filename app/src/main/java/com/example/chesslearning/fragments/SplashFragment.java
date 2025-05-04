@@ -15,8 +15,7 @@ import android.view.ViewGroup;
 
 import com.example.chesslearning.R;
 import com.example.chesslearning.app.App;
-import com.example.chesslearning.castom.SplashThread;
-import com.example.chesslearning.databinding.FragmentMainBinding;
+import com.example.chesslearning.custom.SplashThread;
 import com.example.chesslearning.databinding.FragmentSplashBinding;
 
 public class SplashFragment extends Fragment {

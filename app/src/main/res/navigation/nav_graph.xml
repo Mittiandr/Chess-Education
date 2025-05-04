@@ -42,6 +42,11 @@
             app:destination="@id/loginFragment"
             app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_mainFragment_to_profiFragment"
+            app:destination="@id/profiFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
     </fragment>
 
 
@@ -67,6 +72,25 @@
         android:name="com.example.chesslearning.fragments.OptionFragment"
         android:label="fragment_debut"
         tools:layout="@layout/fragment_option" />
+    <fragment
+        android:id="@+id/profiFragment"
+        android:name="com.example.chesslearning.fragments.ProfiFragment"
+        android:label="fragment_profy"
+        tools:layout="@layout/fragment_profy" >
+        <action
+            android:id="@+id/action_profiFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_profiFragment_to_individualProfyFragment"
+            app:destination="@id/individualProfyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/individualProfyFragment"
+        android:name="com.example.chesslearning.fragments.IndividualProfyFragment"
+        android:label="fragment_individual_profy"
+        tools:layout="@layout/fragment_individual_profy" />
 
 
 </navigation>
